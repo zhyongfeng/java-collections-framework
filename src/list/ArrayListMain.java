@@ -58,10 +58,9 @@ public class ArrayListMain {
         System.out.println(stringList1.retainAll(stringList2));
 
         Iterator it = stringList1.iterator();
-        while(it.hasNext()){
+        while (it.hasNext()) {
             System.out.println(it.next().toString());
         }
-
 
 
     }

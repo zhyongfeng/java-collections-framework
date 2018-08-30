@@ -3,17 +3,17 @@ package list;
 import java.util.LinkedList;
 
 public class LinkedListMain {
-    private LinkedList<String > linkedList = new LinkedList<>();
+    private LinkedList<String> linkedList = new LinkedList<>();
 
-    private void push(String s){
+    private void push(String s) {
         linkedList.addFirst(s);
     }
 
-    private String pop(){
+    private String pop() {
         return linkedList.removeFirst();
     }
 
-    private boolean isEmpty(){
+    private boolean isEmpty() {
         return linkedList.isEmpty();
     }
 
@@ -26,8 +26,8 @@ public class LinkedListMain {
         System.out.println(stack.pop());
         System.out.println();
         System.out.println("全部元素:");
-        while(!stack.isEmpty()){
-            System.out.println("\t"+stack.pop());
+        while (!stack.isEmpty()) {
+            System.out.println("\t" + stack.pop());
         }
     }
 }

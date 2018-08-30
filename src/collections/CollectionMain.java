@@ -1,4 +1,5 @@
-package list;
+package collections;
+
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import javax.swing.text.html.HTMLDocument;
@@ -15,7 +16,7 @@ it is not added again. On the other hand, if you called add() on a List
  */
 public class CollectionMain {
     public static void main(String[] args) {
-        String     anElement  = "an element";
+        String anElement = "an element";
         Collection collection = new HashSet();
 
         collection.add(anElement);
@@ -27,7 +28,7 @@ public class CollectionMain {
         //System.out.println(wasElementRemoved);
 
         Iterator it = collection.iterator();
-        while (((Iterator) it).hasNext()){
+        while (((Iterator) it).hasNext()) {
             System.out.println(it.next().toString());
         }
 
@@ -56,12 +57,12 @@ public class CollectionMain {
         System.out.println(target);
 
 
-        Collection collection2   = new HashSet();
+        Collection collection2 = new HashSet();
         boolean containsElement = collection2.contains("an element");
 
         //return true if both the collections are empty
-        Collection elements     = new HashSet();
-        boolean containsAll     = collection2.containsAll(elements);
+        Collection elements = new HashSet();
+        boolean containsAll = collection2.containsAll(elements);
 
         System.out.println(containsElement);
         System.out.println(containsAll);
