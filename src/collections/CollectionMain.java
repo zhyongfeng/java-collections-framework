@@ -1,9 +1,9 @@
 package collections;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
-import javax.swing.text.html.HTMLDocument;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /*add() adds the given element to the collection,
 and returns true if the Collection changed as a result of calling
